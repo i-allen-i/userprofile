@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>UPDATE USER DETAILS</h1>
+<form action="" method="post">
+     {% csrf_token %}
+     <label for="">User Name:<></label>
+     <input type="text" name="uname" placeholder="Enter the username" value="{{user.user}}">
+     <label for="">Bio:<></label>
+     <input type="text" name="bio" placeholder="Enter the bio"value="{{user.bio}}">
+     <label for="">Skills:<></label>
+     <input type="text" name="skills" placeholder="Enter the skills"value="{{user.skills}}">
+     <label for="">Contact Number:<></label>
+     <input type="text" name="cnum" placeholder="Enter the contact number" value="{{user.contact_number}}">
+     <input type="submit" value="update">
+ </form>
+</body>
+</html>
